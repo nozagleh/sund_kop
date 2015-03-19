@@ -16,13 +16,13 @@ body{
 .container{
 	width: 100%;
 	background-color: #fff;
-	margin-top: 120px;
+	/*margin-top: 120px;*/
 }
 
 .header{
 	height: 120px;
 	width: inherit;
-	position: fixed;
+	/*position: fixed;*/
 	top: 0;
 	left: 0;
 	background-color: #fff;
@@ -34,42 +34,51 @@ body{
 	margin: 0 auto;
 }
 
-#logo{
+.logo{
 	height: 100%;
 	width: 80px;
 	display: inline-block;
 	float: left;
 }
-#logo img{
+.logo img{
 	height: 80px;
 	width: 80px;
 	margin-top: 20px;
 }
 
-#navigation{
+.navigation{
 	display: inline-block;
 	margin-right: 30px;
 	margin-top: 50px;
 	float: right;
 }
-#navigation ul{
+.navigation ul{
 	list-style: none;
 	display: block;
 }
-#navigation ul li{
+.navigation ul li{
 	display: inline-block;
 	margin-right: 30px;
 }
-#navigation ul li a{
+.navigation ul li a{
 	color: #505050;
 	text-decoration: none;
 	font-size: 1.3em;
 	transition:0.5s;
 }
-#navigation ul li a:hover{
+.navigation ul li a:hover{
 	color:#cb0914;
 	transition:0.5s;
 }
+
+.smallnav{
+	position: fixed;
+	height: 80px !important;
+}
+.smallnav img{
+	margin-top: 0px;
+}
+.smallnav .navigation{margin-top: 25px;}
 
 .maincontent{
 	width: 100%;
@@ -78,8 +87,9 @@ body{
 .mtop{
 	height: 600px;
 	width: inherit;
-	background: url('main.jpg') 60% 60%;
+	background: url('main.jpg') 65	% 65%;
 	background-size: cover;
+	text-align: center;
 }
 .mtop h1{
 	font-size: 3em;
@@ -89,9 +99,14 @@ body{
 	width: relative;
 	display: inline-block;
 	width: auto;
-	margin-left: 10%;
+	/*margin-left: 5%;*/
 	margin-top: 5%;
 	text-transform: uppercase;
+}
+
+#dark{
+	background: url('main1.jpg') 50% 50%;
+	background-size: cover;
 }
 
 .mmiddle{
