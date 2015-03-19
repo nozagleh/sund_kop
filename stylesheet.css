@@ -87,7 +87,7 @@ body{
 .mtop{
 	height: 600px;
 	width: inherit;
-	background: url('main.jpg') 65	% 65%;
+	background: url('main.jpg') 65% 65%;
 	background-size: cover;
 	text-align: center;
 }
@@ -99,14 +99,20 @@ body{
 	width: relative;
 	display: inline-block;
 	width: auto;
-	/*margin-left: 5%;*/
 	margin-top: 5%;
 	text-transform: uppercase;
 }
 
 #dark{
-	background: url('main1.jpg') 50% 50%;
+	background: url('main2.jpg') 50% 50%;
 	background-size: cover;
+}
+
+.bgblack{
+	height: inherit;
+	width: inherit;
+	background-color: #1c1c1c;
+	opacity: 0.3;
 }
 
 .mmiddle{
@@ -192,5 +198,47 @@ body{
 .tt a{
 	color: #888888;
 	text-decoration: none;
+}
+
+.anim{
+	-moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.3s;
+
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.3s;
+
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+}
+
+@-moz-keyframes dropHeader {
+    0% {
+        -moz-transform: translateY(-160px);
+    }
+    100% {
+        -moz-transform: translateY(0);
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        -webkit-transform: translateY(-160px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-160px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
