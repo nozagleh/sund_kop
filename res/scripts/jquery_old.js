@@ -22,7 +22,7 @@ $(function(){
 		if ($scroll > $showtt) {
 			$('.tt').fadeIn(500);	
 		}else {
-			$('.tt').fadeOut(1000).hide(1000);
+			$('.tt').fadeOut(1000).hide();
 		};
 	});
 });
