@@ -1,4 +1,4 @@
-*{margin:0; padding: 0;}
+*{margin:0; padding: 0; outline: none;}
 html,body{height: 100%;width: 100%;}
 body{
 	font-family: 'Roboto', sans-serif;
@@ -39,6 +39,7 @@ body{
 	background-size: 25px 25px;
 	opacity: 0.5;
 	transition: 0.2s;
+	z-index: 8888;
 }
 .arrowdown{
 	/*background: url('../images/arrowdown.png');
@@ -114,6 +115,7 @@ body{
 .smallnav{
 	position: fixed;
 	height: 80px !important;
+	z-index: 9999;
 }
 .smallnav img{
 	margin-top: 0px;
@@ -149,7 +151,19 @@ body{
 	background-size: cover;
 }
 #altbg5{
-	background: url('../images/main1.jpg') 50% 20%;
+	background: url('../images/main1.jpg') 50% 40%;
+	background-size: cover;
+}
+#altbg6{
+	background: url('../images/main12.jpg') 50% 40%;
+	background-size: cover;
+}
+#altbg7{
+	background: url('../images/main9.jpg') 50% 20%;
+	background-size: cover;
+}
+#altbg8{
+	background: url('../images/main10.jpg') 50% 20%;
 	background-size: cover;
 }
 #haltbg1{
@@ -162,6 +176,18 @@ body{
 }
 #haltbg3{
 	background: url('../images/main3.jpg') 50% 50%;
+	background-size: cover;
+}
+#haltbg4{
+	background: url('../images/main4.jpg') 50% 50%;
+	background-size: cover;
+}
+#haltbg5{
+	background: url('../images/main11.jpg') 25% 27%;
+	background-size: cover;
+}
+#haltbg6{
+	background: url('../images/main10.jpg') 25% 25%;
 	background-size: cover;
 }
 
@@ -205,7 +231,7 @@ body{
 }
 
 .expand{
-	height: auto;
+	height: auto !important;
 }
 
 .termslist{
@@ -251,6 +277,13 @@ body{
 	margin:0 auto;
 	padding-top: 40px;
 }
+
+.tables h1{
+	background-color: transparent;
+	color: #000;
+	margin-bottom: 20px;
+}
+
 #table1{
 	width: 50%;
 	float: left;
@@ -268,6 +301,8 @@ body{
 }
 
 .tables table tr td{padding-bottom: 10px;}
+
+.tables table tr th{font-size: 1.2em;font-weight: 100;}
 
 .quotes{
 	margin: 0 auto;
