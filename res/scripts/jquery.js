@@ -11,11 +11,13 @@ $(function(){
 
 	$('.dispphotos').click(function(){
 		$('.photos').slideToggle("slow");
+		$('.arrow').toggleClass('arrowdown');
 	});
 
 	$('.termslist ul li:nth-child(2)').hide();
 	$('.termslist ul li h1').on("click",function(e){
 		$(e.target).closest("ul").find('.info').slideToggle("slow");
+		$(e.target).closest("ul").find('.arrow').toggleClass('arrowdown');
 	});
 
 	var $showtt = $('.mtop').offset().top + 300;
