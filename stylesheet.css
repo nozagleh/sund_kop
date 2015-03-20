@@ -108,11 +108,32 @@ body{
 	background-size: cover;
 }
 
+#light{
+	background-color: #fff;
+	background: none;
+}
+
 .bgblack{
 	height: inherit;
 	width: inherit;
 	background-color: #1c1c1c;
 	opacity: 0.3;
+}
+
+.quotes{
+	margin: 0 auto;
+	width: 800px;
+	padding-top: 80px;
+
+}
+
+.mtop blockquote{
+	font-size: 2em;
+	font-weight: 100;
+	color: #fff;
+	padding: 20px 20px;
+	background-color: rgba(0,0,0,0.4);
+	margin-bottom: 20px;
 }
 
 .mmiddle{
