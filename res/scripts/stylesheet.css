@@ -166,6 +166,14 @@ body{
 	background: url('../images/main10.jpg') 50% 20%;
 	background-size: cover;
 }
+#altbg9{
+	background: url('http://www3.vegag.is/faerd/island1e.gif');
+	background-size: cover;
+}
+#altbg10{
+	background: url('../images/main13.jpg') 50% 50%;
+	background-size: cover;
+}
 #haltbg1{
 	background: url('../images/main5.jpg') 50% 45%;
 	background-size: cover;
@@ -188,6 +196,14 @@ body{
 }
 #haltbg6{
 	background: url('../images/main10.jpg') 25% 25%;
+	background-size: cover;
+}
+#haltbg6{
+	background: url('../images/main12.jpg') 25% 30%;
+	background-size: cover;
+}
+#haltbg7{
+	background: url('../images/main14.jpg') 25% 40%;
 	background-size: cover;
 }
 
@@ -311,6 +327,10 @@ body{
 
 }
 
+.quotes a{
+	text-decoration: none;
+}
+
 .mtop blockquote{
 	font-size: 2em;
 	font-weight: 100;
@@ -321,6 +341,11 @@ body{
 }
 .mtop blockquote:hover{
 	background-color: rgba(0,0,0,0.6);
+}
+
+.bggray{
+	background-color: #f6f3f3;
+	background: none;
 }
 
 .mmiddle{
