@@ -14,16 +14,21 @@ body{
 	display: none;
 }
 
+.wheader{
+	height: 80px;
+}
+
 .wheader h1{
 	text-align: center;
 	font-size: 3em;
 	font-weight: 100;
-	padding-top: 40px;
+	padding-top: 20px;
+	cursor: pointer;
 }
 
 .container{
 	width: 100%;
-	background-color: #fff;
+	/*background-color: #fff;*/
 	/*margin-top: 120px;*/
 }
 
@@ -175,6 +180,47 @@ body{
 	opacity: 0.3;
 }
 
+.expand{
+	height: auto;
+}
+
+.termslist{
+	width: 1004px;
+	margin:0 auto;
+}
+.termslist ul{
+	list-style: none;
+	margin-top: 20px;
+	padding: 10px 20px;
+}
+.termslist h1{
+	margin-top: 0px;
+	background-color: transparent;
+	margin-bottom: 10px;
+	color: #000;
+	cursor: pointer;
+}
+.termslist h1:hover,.wheader h1:hover{
+	color:#cb0914;
+}
+.termslist ul li:nth-child(2){
+	font-size: 1.5em;
+	font-weight: 100;
+	color:#000;
+	line-height: 30px;
+	text-align:center;
+
+}
+.termslist ul li:nth-child(2):hover{
+
+}
+
+.furtherinfo{
+	font-size: 1.2em;
+	font-weight: 100;
+	color: #000;
+}
+
 .tables{
 	width: 1024px;
 	height: inherit;
@@ -236,6 +282,79 @@ body{
 	margin: 20px auto;
 	font-size: 2em;
 	font-weight: 200;
+}
+
+.photos{
+	display: none;
+	
+}
+
+.arrowup{
+	display: block;
+	height: 50px;
+	width: 50px;
+}
+
+.slideshow{
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	border-right: 4px;
+}
+
+.slideshow ul{
+	position: relative;
+	margin: 0;
+	padding:0;
+	width: 860px;
+	height: 573px;
+	list-style: none;
+}
+
+.slideshow ul li{
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 860px;
+	height: 573px;
+}
+
+.slideshow ul li img{
+	height: 573px;
+	width: 860px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
 }
 
 .footer{
