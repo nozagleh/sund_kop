@@ -8,6 +8,10 @@ body{
 	text-rendering: optimizeLegibility;
 }
 
+.show{
+	display: block !important;
+}
+
 .whitespace{
 	height: 0px;
 	width: inherit;
@@ -84,6 +88,9 @@ body{
 	margin-top: 20px;
 }
 
+.menubtn{display: none; background: url('../images/menu_closed.png') no-repeat; background-size: 100px 100px; float: right; transition:0.2s;}
+.menuopen{background: url('../images/menu_open.png') no-repeat; background-size: 100px 100px; transition:0.2s;}
+
 .navigation{
 	display: inline-block;
 	margin-top: 50px;
@@ -101,6 +108,7 @@ body{
 	color: #505050;
 	text-decoration: none;
 	font-size: 1.3em;
+	font-weight: 100;
 	transition:0.5s;
 }
 .navigation ul li a:hover{
@@ -553,16 +561,35 @@ a.control_next {
 }
 
 @media screen and (max-width: 1190px){
+	*{margin:0;padding: 0;}
+	.container{margin-top: 80px;}
 	.header{
 		min-width: 100%;
+		max-width: 100%;
 	}
 
 	.nav{
 		min-width: 100%;
+		width: 100%;
 	}
 
 	.logo{
 		margin-left: 40px;
+	}
+	.logo img{
+		height: 100px;
+		width: 100px;
+	}
+
+	.menubtn{
+		display: inline-block;
+		margin-right: 40px;
+		height: inherit;
+		width: 100px;
+	}
+
+	.smallnav{
+		height: 100px !important;
 	}
 
 	.navigation{
@@ -571,6 +598,8 @@ a.control_next {
 		margin-top: 0px !important;
 		padding-top: 20px;
 		background-color: #fff;
+		float: none;
+		clear: left;
 	}
 
 	.navigation ul{
@@ -582,6 +611,9 @@ a.control_next {
 		height: 40px;
 		width: 100%;
 		background-color: #fff;
+	}
+	.navigation ul li a{
+		font-size: 2em;
 	}
 
 }

@@ -14,6 +14,11 @@ $(function(){
 		$('.arrow').toggleClass('arrowdown');
 	});
 
+	$('.menubtn').click(function(){
+		$('.navigation').toggleClass('show');
+		$('.menubtn').toggleClass('menuopen');
+	});
+
 	$('.termslist ul li:nth-child(2)').hide();
 	$('.termslist ul li h1').on("click",function(e){
 		$(e.target).closest("ul").find('.info').slideToggle("slow");
@@ -21,15 +26,32 @@ $(function(){
 	});
 
 	var $showtt = $('.mtop').offset().top + 300;
-	$(window).scroll(function(){
-		var $scroll = $(window).scrollTop();
-		if ($scroll >20) {
+	var $wWidth = $(window).width();
+	if ($wWidth <= 1190) {
+		$('.header').addClass('smallnav');
+	};
+
+	$(window).resize(function(){
+		$wWidth = $(window).width();
+		if ($wWidth <= 1190) {
 			$('.header').addClass('smallnav');
-			$('.container').css({'margin-top': '120px'});
-		}else{
-			$('.header').removeClass('smallnav');
-			$('.container').css({'margin-top': '0px'});
 		};
+	});
+
+	$(window).scroll(function(){
+		if($wWidth > 1190){
+			var $scroll = $(window).scrollTop();
+			if ($scroll >20) {
+				$('.header').addClass('smallnav');
+				$('.container').css({'margin-top': '120px'});
+			}else{
+				$('.header').removeClass('smallnav');
+				$('.container').css({'margin-top': '0px'});
+			};
+		}else{
+			$('.header').addClass('smallnav');
+		}
+		
 		if ($scroll > $showtt) {
 			$('.tt').fadeIn(500);	
 		}else {
