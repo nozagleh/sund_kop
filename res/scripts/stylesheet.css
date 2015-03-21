@@ -363,7 +363,8 @@ body{
 }
 .mmiddle p{
 	width: 800px;
-	margin: 20px auto;
+	margin: 0px auto;
+	padding: 20px 0px;
 	font-size: 2em;
 	font-weight: 200;
 }
@@ -559,5 +560,29 @@ a.control_next {
 	.nav{
 		min-width: 100%;
 	}
+
+	.logo{
+		margin-left: 40px;
+	}
+
+	.navigation{
+		display: none;
+		width: 100%;
+		margin-top: 0px !important;
+		padding-top: 20px;
+		background-color: #fff;
+	}
+
+	.navigation ul{
+
+	}
+	.navigation ul li{
+		display: block;
+		padding-left: 40px;
+		height: 40px;
+		width: 100%;
+		background-color: #fff;
+	}
+
 }
 
