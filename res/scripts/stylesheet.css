@@ -8,6 +8,8 @@ body{
 	text-rendering: optimizeLegibility;
 }
 
+.bgwhiteish{background-color: #f6f3f3; height: 100%;}
+
 .show{
 	display: block !important;
 }
