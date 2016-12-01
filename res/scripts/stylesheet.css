@@ -80,13 +80,11 @@ body{
 
 .logo{
 	height: 100%;
-	width: 80px;
 	display: inline-block;
 	float: left;
 }
 .logo img{
 	height: 80px;
-	width: 80px;
 	margin-top: 20px;
 }
 
@@ -104,22 +102,23 @@ body{
 }
 .navigation ul li{
 	display: inline-block;
-	margin-right: 30px;
+	margin-right: 15px;
 }
 .navigation ul li a{
 	color: #505050;
 	text-decoration: none;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-weight: 100;
 	transition:0.5s;
+	text-transform: uppercase;
 }
 .navigation ul li a:hover{
-	color:#cb0914;
+	color:#1f903c;
 	transition:0.5s;
 }
 
 .active{
-	color: #cb0914 !important;
+	color: #1f903c !important;
 }
 
 .smallnav{
@@ -346,7 +345,7 @@ body{
 	font-weight: 100;
 	color: #fff;
 	padding: 20px 20px;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.7);
 	margin-bottom: 20px;
 }
 .mtop blockquote:hover{
@@ -362,21 +361,22 @@ body{
 	width: inherit;
 	background-color: #f6f3f3;
 	color: #000;
-	height: 440px;
+	padding-bottom: 30px;
 }
 .mmiddle h1{
 	text-align: center;
 	font-size: 3em;
 	font-weight: 100;
-	padding-top: 60px;
+	padding-top: 30px;
 	text-transform: uppercase;
 }
 .mmiddle p{
 	width: 800px;
 	margin: 0px auto;
 	padding: 20px 0px;
-	font-size: 2em;
+	font-size: 1.8em;
 	font-weight: 200;
+	line-height: 32px;
 }
 
 .photos{
